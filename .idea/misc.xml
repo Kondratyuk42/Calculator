@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/s.kondratyuk/AndroidStudioProjects/Calculator/app/src/main/res/layout-land/activity_grid_keyboard.xml" value="0.18" />
         <entry key="..\:/Users/s.kondratyuk/AndroidStudioProjects/Calculator/app/src/main/res/layout/activity_calculator.xml" value="0.29528985507246375" />
-        <entry key="..\:/Users/s.kondratyuk/AndroidStudioProjects/Calculator/app/src/main/res/layout/activity_grid_keyboard.xml" value="0.29528985507246375" />
+        <entry key="..\:/Users/s.kondratyuk/AndroidStudioProjects/Calculator/app/src/main/res/layout/activity_grid_keyboard.xml" value="0.22" />
         <entry key="..\:/Users/s.kondratyuk/AndroidStudioProjects/Calculator/app/src/main/res/layout/activity_main.xml" value="0.29528985507246375" />
         <entry key="..\:/Users/s.kondratyuk/AndroidStudioProjects/Calculator/app/src/main/res/layout/activity_settings.xml" value="0.29528985507246375" />
       </map>
