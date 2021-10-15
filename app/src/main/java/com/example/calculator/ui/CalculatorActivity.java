@@ -64,6 +64,7 @@ public class CalculatorActivity extends AppCompatActivity implements CalculatorV
 
         CalcApp calcApp = (CalcApp) getApplicationContext();
 
+
         Context applicationContext = getApplicationContext();
 
         storage = new ThemeStorage(this);
