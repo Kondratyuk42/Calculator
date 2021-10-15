@@ -16,4 +16,10 @@
     <string name="key_minus">-</string>
     <string name="key_mult">*</string>
     <string name="key_div">/</string>
+    <string name="theme_one">One</string>
+    <string name="theme_two">Two</string>
+    <string name="theme_three">Three</string>
+    <string name="theme_four">Four</string>
+    <string name="btn_settings">Settings</string>
+    <string name="btn_terms_conditions" />
 </resources>

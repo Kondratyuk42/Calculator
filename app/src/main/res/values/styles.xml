@@ -9,4 +9,15 @@
     <style name="CalcButton.ButtonColor">
         <item name="android:textColor">#FFA500</item>
     </style>
+
+    <style name="CalcButtonPortrait">
+        <item name="android:layout_margin">@dimen/calcPortrait</item>
+        <item name="android:backgroundTint"> @color/teal_700</item>
+        <item name="android:textSize">@dimen/size</item>
+        <item name="android:textColor">#FFA500</item>
+    </style>
+
+    <style name="CalcButton.Version2">
+        <item name="android:textColor">@color/teal_700</item>
+    </style>
 </resources>

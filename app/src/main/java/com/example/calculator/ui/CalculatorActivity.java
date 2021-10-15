@@ -1,27 +1,75 @@
 package com.example.calculator.ui;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.calculator.CalcApp;
 import com.example.calculator.R;
 import com.example.calculator.domain.CalculatorImp;
 import com.example.calculator.domain.Operation;
+import com.example.calculator.domain.Theme;
+import com.example.calculator.storage.ThemeStorage;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class CalculatorActivity extends AppCompatActivity implements CalculatorView {
+    private static final String ARG_THEME = "ARG_THEME";
+
+    private ThemeStorage storage;
+
     private TextView txtResult;
 
     private CalculatorPresenter presenter;
 
+    private final ActivityResultLauncher<Intent> settingsLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
+        @Override
+        public void onActivityResult(ActivityResult result) {
+
+            if (result.getResultCode() == Activity.RESULT_OK) {
+                if (result.getData() != null) {
+                    Theme theme = (Theme) result.getData().getSerializableExtra(ARG_THEME);
+
+                    storage.setTheme(theme);
+
+                    recreate();
+                }
+            }
+
+        }
+    });
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+    }
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Context context = this;
+
+        CalcApp calcApp = (CalcApp) getApplicationContext();
+
+        Context applicationContext = getApplicationContext();
+
+        storage = new ThemeStorage(this);
+
+        setTheme(storage.getTheme().getTheme());
+
         setContentView(R.layout.activity_calculator);
 
         presenter = new CalculatorPresenter(this, new CalculatorImp());
@@ -85,7 +133,24 @@ public class CalculatorActivity extends AppCompatActivity implements CalculatorV
 
     }
 
-    @Override
+    Button settingsButton = findViewById(R.id.btn_settings);
+
+    if (settingsButton != null) {
+        settingsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CalculatorActivity.this, SettingsActivity.class);
+
+                Theme theme = storage.getTheme();
+                intent.putExtra(SettingsActivity.ARG_THEME, theme);
+                settingsLauncher.launch(intent);
+            }
+        });
+
+    }
+}
+
+        @Override
     public void showResult(String result) {
         txtResult.setText(result);
     }

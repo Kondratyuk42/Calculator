@@ -5,111 +5,133 @@
     android:layout_centerHorizontal="true"
     android:columnCount="4">
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/key_1"
         android:layout_columnWeight="1"
-        android:layout_gravity="fill_horizontal" />
-    <Button
+        android:layout_gravity="fill_horizontal"
+        android:text="@string/key_1"
+        style="@style/CalcButtonPortrait"/>
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/key_2"
         android:layout_columnWeight="1"
-        android:layout_gravity="fill_horizontal" />
-    <Button
+        android:layout_gravity="fill_horizontal"
+        android:text="@string/key_2"
+        style="@style/CalcButtonPortrait"/>
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/key_3"
         android:layout_columnWeight="1"
-        android:layout_gravity="fill_horizontal" />
+        android:layout_gravity="fill_horizontal"
+        android:text="@string/key_3"
+        style="@style/CalcButtonPortrait"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_plus"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/key_plus"
         android:layout_columnWeight="1"
-        android:layout_gravity="fill_horizontal" />
+        android:layout_gravity="fill_horizontal"
+        android:text="@string/key_plus"
+        style="@style/CalcButtonPortrait"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
         android:text="@string/key_4"
-        android:layout_gravity="fill_horizontal" />
-    <Button
+        style="@style/CalcButtonPortrait"/>
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
         android:text="@string/key_5"
-        android:layout_gravity="fill_horizontal" />
-    <Button
+        style="@style/CalcButtonPortrait"/>
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_6"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
         android:text="@string/key_6"
-        android:layout_gravity="fill_horizontal" />
+        style="@style/CalcButtonPortrait"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_minus"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/key_minus"
         android:layout_columnWeight="1"
-        android:layout_gravity="fill_horizontal" />
+        android:layout_gravity="fill_horizontal"
+        android:text="@string/key_minus"
+        style="@style/CalcButtonPortrait"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_7"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
         android:text="@string/key_7"
-        android:layout_gravity="fill_horizontal" />
-    <Button
+        style="@style/CalcButtonPortrait"/>
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_8"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
         android:text="@string/key_8"
-        android:layout_gravity="fill_horizontal" />
-    <Button
+        style="@style/CalcButtonPortrait"/>
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_9"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
         android:text="@string/key_9"
-        android:layout_gravity="fill_horizontal" />
+        style="@style/CalcButtonPortrait"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_mult"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/key_mult"
         android:layout_columnWeight="1"
-        android:layout_gravity="fill_horizontal" />
+        android:layout_gravity="fill_horizontal"
+        android:text="@string/key_mult"
+        style="@style/CalcButtonPortrait"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_0"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/key_0"
         android:layout_columnSpan="2"
-        android:layout_gravity="fill_horizontal" />
-    <Button
+        android:layout_gravity="fill_horizontal"
+        android:text="@string/key_0"
+        style="@style/CalcButtonPortrait"/>
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_dot"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
         android:text="@string/key_dot"
-        android:layout_gravity="fill_horizontal" />
+        style="@style/CalcButtonPortrait"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_div"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/key_div"
         android:layout_columnWeight="1"
-        android:layout_gravity="fill_horizontal" />
+        android:layout_gravity="fill_horizontal"
+        android:text="@string/key_div"
+        style="@style/CalcButtonPortrait"/>
 
 
 
