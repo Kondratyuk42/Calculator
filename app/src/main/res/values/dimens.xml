@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="calc">4dp</dimen>
+    <dimen name="calcPortrait">2dp</dimen>
+    <dimen name="size">12dp</dimen>
+</resources>
